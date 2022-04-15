@@ -1,0 +1,445 @@
+/* ------ Спецификация ------ */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0em;
+}
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+p {
+	margin: 0;
+}
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+a, a:hover, a:active {
+	text-decoration: none;
+}
+a, button, input {
+	transition: all 0.5s ease;
+}
+.container-fluid__plain {
+	padding: 0;
+}
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.jc-between {
+	justify-content: space-between;
+}
+.ai-center {
+	align-items: center;
+}
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+	outline: none;
+}
+/* ------ Header ------ */
+.header {
+	background: url(../img/header.jpg) no-repeat center center / cover;
+	color: #fff;
+	padding-bottom: 243px;
+}
+.logo {
+	font-size: 30px;
+	padding-top: 27px;
+	padding-bottom: 28px;
+}
+.logo a {
+	color: #fff;
+}
+.logo span {
+	color: #626fe4;
+	font-weight: 700;
+}
+.nav a {
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;	
+	position: relative;	
+}
+.nav {
+	padding-top: 39px;
+	padding-left: 24px;
+}
+.nav__menu a::before {
+	content: '';
+	bottom: -39px;
+	right: -50%;
+	position: absolute;
+	width: 0%;
+	height: 3px;
+	background-color: #fff;
+	opacity: 0.5;
+	transition: 0.5s;
+}
+.nav__menu a:hover:before {
+	width: 200%;
+	left: -50%;
+}
+/* ------ Offer ------ */
+.offer {
+	text-align: center;
+	-ms-align-items: center;
+	align-items: center;
+	padding-top: 182px;
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.offer__title {
+	font-size: 45px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.offer__text {
+	font-size: 22px;
+	text-align: center;
+	padding-top: 30px;
+	margin: 0 auto;
+}
+.btn {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	font-size: 13px;
+	border: 1px solid #e84545;
+	background: #e84545;
+	width: 200px;
+	padding: 12px 0;
+	border-radius: 2px;
+}
+.btn:hover {
+	color: #e84545;
+	background: #fff;
+	border: 1px solid #fff;
+}
+.offer a {
+	margin-top: 28px;
+}
+/*--------- Features (Второй экран) ---------*/
+.features {
+	margin-top: 121px;
+	margin-bottom: 50px;
+}
+.features__item {
+	text-align: center;
+	margin-bottom: 72px;
+}
+.features__title {
+	font-size: 14px;
+	font-weight: 700;
+	color: #2d3033;
+	text-transform: uppercase;
+	padding: 32px 0 18px;
+}
+.features__text {
+	font-size: 14px;
+	color: #6c7279;
+}
+/*--------- Works (Третий экран) ---------*/
+.works {
+	padding-bottom: 103px;
+}
+.works__content {
+	flex-wrap: wrap;
+}
+.works__wrap {
+	margin-bottom: 26px;
+	position: relative;
+}
+.works__overlay {
+	font-size: 14px;
+	color: #fff;
+	background: rgba(232,69,69,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.works__wrap:hover .works__overlay {
+	opacity: 1;
+}
+.works__name {
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.works__img {
+	width: 100%;
+}
+/*--------- Team (Четвертый экран) ---------*/
+.team {
+	background: rgba(98, 111, 228, 0.09);
+	padding: 125px 0 117px;
+}
+.person__name {
+	font-size: 22px; 
+	color: #2d3033;
+	font-weight: 700;
+	padding: 25px 0 6px;
+}
+.person__job {
+	font-size: 13px;
+	color: #e84545;
+	text-transform: uppercase;
+}
+.person__text {
+	font-size: 14px;
+	color: #6c7279;
+	padding: 20px 0 26px;
+}
+.person__network {
+	font-size: 16px;
+	color: #c6cacc;
+	background: #fff;
+	border: 1px solid transparent;
+	padding-top: 12px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+.person__network:hover {
+	color: #e84545;
+	border: 1px solid #e84545;
+	transition: all 0.5s ease;
+}
+/*--------- Clients (Пятый экран) ---------*/
+.clients {
+	padding: 0;
+}
+.susan-img {
+	background: url('../img/girl.jpg') no-repeat center center / cover;
+	height: 499px;
+}
+.quote {
+	color: #fff;
+	background: #53354a;
+	padding: 132px 0 150px 83px;
+	width: 100%;
+	max-height: 499px;
+}
+.quote__text {
+	font-size: 36px;
+	max-width: 500px;
+	line-height: 1.15em;
+	padding-bottom: 34px;
+}
+.quote__author {
+	font-size: 13px;
+	text-transform: uppercase;
+}
+/*--------- Download (Шестой экран) ---------*/
+.download {
+	color: #2d3033;
+	text-align: center;
+}
+.download__content {
+	margin: 96px 0 101px;
+}
+.download__title {
+	font-size: 28px;
+	font-weight: 700;
+}
+.download__text {
+	font-size: 13px;
+	text-transform: uppercase;
+	padding: 11px 0 36px;
+}
+.download__btn {
+	width: 280px;
+}
+/*--------- Footer ---------*/
+.footer {
+	background: #3a3e64;	
+	border-bottom: 12px solid #313454;
+}
+h5 {
+	font-size: 14px;
+	color: #fff;	
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.footer__content {
+	font-size: 14px;
+	justify-content: center;
+	text-align: center;
+	padding: 88px 0 74px;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.location {
+	width: 177px;
+}
+.location__text {
+	color: #fff;
+	opacity: 0.5;
+	padding-top: 9px;
+}
+.share {
+	width: 320px;
+	margin: 0 auto;
+}
+.share__title {
+	padding-bottom: 18px;
+}
+.share__copyright {
+	color: #808080;
+	display: inline;
+}
+.share__y {
+	color: #e84545;
+}
+.share__kamal {
+	color: #fff;
+}
+.activebox {
+	width: 336px;
+}
+.activebox__text {
+	color: #fff;
+	opacity: 0.5;
+	padding-top: 9px;
+	
+}
+/*--------- Media Queries---------*/
+/* 992 - 1200 px */
+@media screen and (max-width: 1200px) {
+	.quote__text {
+		font-size: 30px;
+	}
+	.quote {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.team__img {
+		max-width: 200px;
+	}
+	.footer__content {
+		justify-content: space-between;
+	}
+	.share, .activebox {
+		max-width: 300px;
+	}
+}
+/* 768 - 992 px */
+@media screen and (max-width: 992px) {	
+	.team__img {
+		max-width: 300px;
+	}
+	.works__wrap .works__img,.works__overlay {
+		width: 100%;
+	}
+	.team__wrap {
+		margin-bottom: 30px;
+	}
+	.location {
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+	.footer__content {
+		text-align: center;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.location {
+		padding: 0;
+	}
+	.activebox {
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+}
+/* 576 - 768 px */
+@media screen and (max-width: 768px) {
+	.logo {
+		font-size: 30px;
+		padding-top: 37px;
+	}
+	.features__item {
+		margin: 0 auto;
+		padding-bottom: 30px;`
+	}	
+	.team__img {
+		max-width: 250px;
+	}
+	.person__text {
+		margin: auto;
+	}
+	.share {
+		padding: 0;
+	}
+}
+/* 320 - 576 px */
+@media screen and (max-width: 576px) {
+	.logo {
+		text-align: center;
+		padding-bottom: 0;
+	}
+	.nav {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		text-align: center;
+	}
+	.nav__menu {
+		padding-bottom: 10px;
+	}
+	.offer {
+		padding-top: 100px;
+	}
+	.offer__title {
+		font-size: 35px;
+	}
+	.offer__text {
+		font-size: 20px;
+	}
+	
+	.team__wrap {
+		text-align: center;
+		width: 100%;
+	}
+	.team__img {
+		width: auto;
+	}
+	.download__title {
+		font-size: 23px;
+	}
+	.download__text {
+		font-size: 11px;
+	}
+	.share {
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+}
